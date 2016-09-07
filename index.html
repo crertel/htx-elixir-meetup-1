@@ -24,8 +24,93 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-markdown>
+                    # Houston Elixir 2016-09-07
+                    ## Installing Elixir
+                </section>
+				<section data-markdown>
+                    ## Windows
+                    1. Download the package from https://repo.hex.pm/elixir-websetup.exe
+                    2. Run it.
+                </section>
+                <section>
+                    <section data-markdown>
+                    ## Mac (Homebrew)
+                    ```
+                    $ brew update
+                    $ brew install elixir
+                    ```
+                    </section>
+                    <section data-markdown>
+                    ## Mac (Macports)
+                    ```
+                    $ sudo port install elixir
+                    ```
+                    </section>
+                    
+                </section>
+                <section>
+                    <section data-markdown>
+                        ## 'Nix (Arch)
+                        ```
+                        $ pacman -S elixir
+                        ```
+                    </section>
+                    <section data-markdown>
+                        ## 'Nix (openSUSE)
+                        ```
+                        $ zypper ar -f http://download.opensuse.org/repositories/devel:/languages:/erlang/openSUSE_Factory/ erlang
+                        $ zypper in elixir
+                        ```
+                    </section>
+                    <section data-markdown>
+                        ## 'Nix (Gentoo)
+                        ```
+                        $ emerge --ask dev-lang/elixir
+                        ```
+                    </section>
+                    <section data-markdown>
+                        ## 'Nix (GNU Guix)
+                        ```
+                        $ guix package -i elixir
+                        ```
+                    </section>
+                    <section data-markdown>
+                        ## 'Nix (Fedora/RHEL/CentOS)
+                        ```
+                        $ yum update
+                        $ yum install elixir
+                        ```
+                    </section>
+                    <section data-markdown>
+                        ## 'Nix (FreeBSD)
+
+                        Ports:
+                        ```
+                        $ cd /usr/ports/lang/elixir && make install clean
+                        ```
+
+                        Package:
+                        ```
+                        $ pkg install elixir
+                        ```
+                    </section>
+                    <section data-markdown>
+                        ## 'Nix (Ubuntu/Debian)
+                        ```
+                        $ wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && sudo dpkg -i erlang-solutions_1.0_all.deb
+                        $ sudo apt-get update
+                        $ sudo apt-get install esl-erlang
+                        $ sudo apt-get install elixir
+                        ```
+                    </section>
+                    <section data-markdown>
+                        ## 'Nix (OpenBSD)
+                        
+                        ¯\\\_(ツ)_/¯
+
+                    </section>
+                </section>
 			</div>
 		</div>
 
